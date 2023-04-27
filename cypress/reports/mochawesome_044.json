@@ -1,0 +1,339 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-11T00:46:01.531Z",
+    "end": "2023-04-11T00:46:02.605Z",
+    "duration": 1074,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "85795b71-a45d-4d9e-9902-8e7f3cbbaebd",
+      "title": "",
+      "fullFile": "cypress/integration/project.spec.js",
+      "file": "cypress/integration/project.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "304d2e68-2992-4f3f-9e2e-51e3b4bec289",
+          "title": "Desafio Técnico: manipulação de DOM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "b1f601e3-c5d7-4e84-b080-99ad9061e6c3",
+              "title": "Exercício 1 - Alterando o texto",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O texto do parágrafo não pode ser -----",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 1 - Alterando o texto O texto do parágrafo não pode ser -----",
+                  "timedOut": null,
+                  "duration": 297,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(PARAGRAFO_EX1).should('not.have.text', '-----');",
+                  "err": {},
+                  "uuid": "a543b381-6c04-4523-8853-2a2c660783e8",
+                  "parentUUID": "b1f601e3-c5d7-4e84-b080-99ad9061e6c3",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a543b381-6c04-4523-8853-2a2c660783e8"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 297,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7a37ca28-61cf-4c69-a4bb-f13e02f42851",
+              "title": "Exercício 2 - Alterando a cor - quadrado amarelo",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "A nova cor do quadrado amarelo deve ser rgb(76, 164, 109)",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 2 - Alterando a cor - quadrado amarelo A nova cor do quadrado amarelo deve ser rgb(76, 164, 109)",
+                  "timedOut": null,
+                  "duration": 118,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(QUADRADO_AMARELO).should('have.css', 'background-color', 'rgb(76, 164, 109)');",
+                  "err": {},
+                  "uuid": "19dc010e-b2aa-4ff3-851b-33ff3fadd6d9",
+                  "parentUUID": "7a37ca28-61cf-4c69-a4bb-f13e02f42851",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "19dc010e-b2aa-4ff3-851b-33ff3fadd6d9"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 118,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "fc01e0b9-66f0-4eae-9193-82380ebaef0e",
+              "title": "Exercício 3 - Alterando a cor - quadrado vermelho",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "A nova cor do quadrado vermelho deve ser branca",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 3 - Alterando a cor - quadrado vermelho A nova cor do quadrado vermelho deve ser branca",
+                  "timedOut": null,
+                  "duration": 126,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(QUADRADO_VERMELHO).should('have.css', 'background-color', 'rgb(255, 255, 255)');",
+                  "err": {},
+                  "uuid": "1955316b-7890-4e41-8ebc-28f6f75808b3",
+                  "parentUUID": "fc01e0b9-66f0-4eae-9193-82380ebaef0e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1955316b-7890-4e41-8ebc-28f6f75808b3"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 126,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "1de0c937-5ff2-4760-86d7-bd9fc40823c6",
+              "title": "Exercício 4 - Corrigindo o título",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O título existe",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 4 - Corrigindo o título O título existe",
+                  "timedOut": null,
+                  "duration": 121,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TITULO).should('exist');",
+                  "err": {},
+                  "uuid": "325e040f-425e-4e8d-91d3-d276abadbef6",
+                  "parentUUID": "1de0c937-5ff2-4760-86d7-bd9fc40823c6",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "O texto do título deve estar corrigido",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 4 - Corrigindo o título O texto do título deve estar corrigido",
+                  "timedOut": null,
+                  "duration": 124,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TITULO).should('have.text', 'Desafio - JavaScript');",
+                  "err": {},
+                  "uuid": "c306feb0-f765-440d-843d-afe4e0146403",
+                  "parentUUID": "1de0c937-5ff2-4760-86d7-bd9fc40823c6",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "325e040f-425e-4e8d-91d3-d276abadbef6",
+                "c306feb0-f765-440d-843d-afe4e0146403"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 245,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "a86d09ae-76ec-41ea-b45a-2d8f8a691825",
+              "title": "Exercício 5 - Letras maiúsculas",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O texto do parágrafo deve estar em letras maiúsculas",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 5 - Letras maiúsculas O texto do parágrafo deve estar em letras maiúsculas",
+                  "timedOut": null,
+                  "duration": 113,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(PARAGRAFO_EX5).should('have.text', 'TEXTO PADRÃO DO NOSSO SITE');",
+                  "err": {},
+                  "uuid": "ba91d9b6-1abc-4041-a184-884b841a37cf",
+                  "parentUUID": "a86d09ae-76ec-41ea-b45a-2d8f8a691825",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "ba91d9b6-1abc-4041-a184-884b841a37cf"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 113,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7a5da214-97df-46f6-bb21-3746e79b7f28",
+              "title": "Exercício 6 - Exibindo tags",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O parágrafo do rodapé deve conter os conteúdos das tags p",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 6 - Exibindo tags O parágrafo do rodapé deve conter os conteúdos das tags p",
+                  "timedOut": null,
+                  "duration": 136,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(PARAGRAFO_EX6).contains(/TEXTO PADRÃO DO NOSSO SITE .+ Trybe/);",
+                  "err": {},
+                  "uuid": "c9738216-8920-4c1b-9150-8ba83fd18494",
+                  "parentUUID": "7a5da214-97df-46f6-bb21-3746e79b7f28",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "c9738216-8920-4c1b-9150-8ba83fd18494"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 136,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

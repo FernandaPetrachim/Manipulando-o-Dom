@@ -1,0 +1,347 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 7,
+    "passes": 5,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-04-10T23:16:23.372Z",
+    "end": "2023-04-10T23:16:44.811Z",
+    "duration": 21439,
+    "testsRegistered": 7,
+    "passPercent": 71.42857142857143,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d88bf04d-b799-4c7b-a1ef-4e8cd245552c",
+      "title": "",
+      "fullFile": "cypress/integration/project.spec.js",
+      "file": "cypress/integration/project.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59665db6-39aa-473e-b247-8d039f677e22",
+          "title": "Desafio Técnico: manipulação de DOM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "0d762b3f-cb4a-4757-bf9f-0a65f64acfc0",
+              "title": "Exercício 1 - Alterando o texto",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O texto do parágrafo não pode ser -----",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 1 - Alterando o texto O texto do parágrafo não pode ser -----",
+                  "timedOut": null,
+                  "duration": 273,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(PARAGRAFO_EX1).should('not.have.text', '-----');",
+                  "err": {},
+                  "uuid": "18c23115-5d01-4eee-9632-5a44c5f5ab7e",
+                  "parentUUID": "0d762b3f-cb4a-4757-bf9f-0a65f64acfc0",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "18c23115-5d01-4eee-9632-5a44c5f5ab7e"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 273,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "90966367-9cc4-401e-abd3-3a3b7e68ccad",
+              "title": "Exercício 2 - Alterando a cor - quadrado amarelo",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "A nova cor do quadrado amarelo deve ser rgb(76, 164, 109)",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 2 - Alterando a cor - quadrado amarelo A nova cor do quadrado amarelo deve ser rgb(76, 164, 109)",
+                  "timedOut": null,
+                  "duration": 117,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(QUADRADO_AMARELO).should('have.css', 'background-color', 'rgb(76, 164, 109)');",
+                  "err": {},
+                  "uuid": "f9ef8a72-b1d9-4543-9042-27ccb589f7eb",
+                  "parentUUID": "90966367-9cc4-401e-abd3-3a3b7e68ccad",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f9ef8a72-b1d9-4543-9042-27ccb589f7eb"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 117,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "c6f6b920-df24-4dff-bd61-54c940171659",
+              "title": "Exercício 3 - Alterando a cor - quadrado vermelho",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "A nova cor do quadrado vermelho deve ser branca",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 3 - Alterando a cor - quadrado vermelho A nova cor do quadrado vermelho deve ser branca",
+                  "timedOut": null,
+                  "duration": 156,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(QUADRADO_VERMELHO).should('have.css', 'background-color', 'rgb(255, 255, 255)');",
+                  "err": {},
+                  "uuid": "43b6633a-c83b-4d55-8efb-7cfa286f93d2",
+                  "parentUUID": "c6f6b920-df24-4dff-bd61-54c940171659",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "43b6633a-c83b-4d55-8efb-7cfa286f93d2"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 156,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "c957efad-e0e5-43ec-a978-1ffbecc75e7c",
+              "title": "Exercício 4 - Corrigindo o título",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O título existe",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 4 - Corrigindo o título O título existe",
+                  "timedOut": null,
+                  "duration": 182,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TITULO).should('exist');",
+                  "err": {},
+                  "uuid": "a23663e9-5392-4e36-88a9-3620bdfd8096",
+                  "parentUUID": "c957efad-e0e5-43ec-a978-1ffbecc75e7c",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "O texto do título deve estar corrigido",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 4 - Corrigindo o título O texto do título deve estar corrigido",
+                  "timedOut": null,
+                  "duration": 102,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TITULO).should('have.text', 'Desafio - JavaScript');",
+                  "err": {},
+                  "uuid": "b1a5b2f9-e469-464d-8c02-496615b90815",
+                  "parentUUID": "c957efad-e0e5-43ec-a978-1ffbecc75e7c",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a23663e9-5392-4e36-88a9-3620bdfd8096",
+                "b1a5b2f9-e469-464d-8c02-496615b90815"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 284,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "ea7fac45-8b0f-4d3b-9a41-328f047adfb6",
+              "title": "Exercício 5 - Letras maiúsculas",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O texto do parágrafo deve estar em letras maiúsculas",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 5 - Letras maiúsculas O texto do parágrafo deve estar em letras maiúsculas",
+                  "timedOut": null,
+                  "duration": 10118,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(PARAGRAFO_EX5).should('have.text', 'TEXTO PADRÃO DO NOSSO SITE');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: expected '<p>' to have text 'TEXTO PADRÃO DO NOSSO SITE', but the text was 'Texto padrão do nosso site'",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: expected '<p>' to have text 'TEXTO PADRÃO DO NOSSO SITE', but the text was 'Texto padrão do nosso site'\n    at Context.eval (http://localhost:42043/__cypress/tests?p=cypress/integration/project.spec.js:140:29)",
+                    "diff": "- 'Texto padrão do nosso site'\n+ 'TEXTO PADRÃO DO NOSSO SITE'\n"
+                  },
+                  "uuid": "2260021a-2fc2-415f-9c5b-7f6bf418ad0a",
+                  "parentUUID": "ea7fac45-8b0f-4d3b-9a41-328f047adfb6",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "2260021a-2fc2-415f-9c5b-7f6bf418ad0a"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 10118,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "9de71b4b-4dc5-42a3-aecb-a0eb75f8ba75",
+              "title": "Exercício 6 - Exibindo tags",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O parágrafo do rodapé deve conter os conteúdos das tags p",
+                  "fullTitle": "Desafio Técnico: manipulação de DOM Exercício 6 - Exibindo tags O parágrafo do rodapé deve conter os conteúdos das tags p",
+                  "timedOut": null,
+                  "duration": 10290,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(PARAGRAFO_EX6).contains(/TEXTO PADRÃO DO NOSSO SITE .+ Trybe/);",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: '/TEXTO PADRÃO DO NOSSO SITE .+ Trybe/' within the element: <p> but never did.",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: '/TEXTO PADRÃO DO NOSSO SITE .+ Trybe/' within the element: <p> but never did.\n    at Context.eval (http://localhost:42043/__cypress/tests?p=cypress/integration/project.spec.js:145:29)",
+                    "diff": null
+                  },
+                  "uuid": "02848a42-0ac3-4adf-b542-c716ba043d4d",
+                  "parentUUID": "9de71b4b-4dc5-42a3-aecb-a0eb75f8ba75",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "02848a42-0ac3-4adf-b542-c716ba043d4d"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 10290,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

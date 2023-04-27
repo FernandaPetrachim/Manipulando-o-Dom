@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: arial;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Desafio - JavaEscripito</h1>
+    </header>
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <footer>
+      <p>Último parágrafo.</p>
+    </footer>
+    <script>
+      //exercicio-1
+
+      //Crie e execute uma função que mude o texto na tag <p>-----</p>, para uma descrição de como você se vê daqui a 2 anos.
+//O que será testado:
+//- O texto do parágrafo não pode ser -----.
+
+      const alteraTexto = (string) => {
+        const paragraph = document.getElementsByTagName ('p')[1];
+        paragraph.innerText = string;
+      }
+      alteraTexto('FORMADAA')
+
+      //exercicio2
+
+      //Crie e execute uma função que mude a cor de fundo do elemento amarelo para rgb(76, 164, 109).
+//O que será testado:
+//- A nova cor de fundo do elemento amarelo deve ser rgb(76, 164, 109).
+
+  const alteraCor = (cor) => {
+  const mudarCor = document.getElementsByClassName('main-content')[0];
+  mudarCor.style.backgroundColor = cor
+}
+alteraCor('rgb(76,164,109)')
+
+//exercicio-3
+
+//Crie e execute uma função que mude a cor de fundo do elemento vermelho para branco.
+//O que será testado:
+//- A nova cor de fundo do elemento vermelho deve ser branca.
+
+const alteraCorDoElemento = (elemento, cor) => {
+  elemento.style.backgroundColor = cor
+}
+const elementoSection = document.getElementsByClassName('center-content')[0];
+alteraCorDoElemento(elementoSection, 'white')
+
+//exercicio-4
+
+//Crie e execute uma função que corrija o texto da tag <h1>.
+//O que será testado:
+//- O título existente - O texto do título deve ser 'Desafio - JavaScript';
+
+const alteraTitulo = (string) => {
+        let title = document.getElementsByTagName('h1')[0];
+        title.innerText = string;
+      }
+      alteraTitulo('Desafio - JavaScript')
+
+//exercicio-5
+
+//Crie e execute uma função que modifique o texto da primeira tag <p> para letras maiúsculas.
+//O que será testado:
+//- O texto do parágrafo deve estar em letras maiúsculas.
+
+      function alteraMaisculo() {
+       let paragraph = document.getElementsByTagName('p')[0];
+       let paragrafoTexto = paragraph.innerText;
+       let paragrafoMaisculo = paragrafoTexto.toLocaleUpperCase();
+        paragraph.innerText = paragrafoMaisculo;
+      }
+      alteraMaisculo()
+
+      //exercicio-6
+
+      //Crie e execute uma função que exiba o conteúdo de todas as tags <p>:
+//Da seção principal: ou seja, com className center-content;
+//Os conteúdos devem ser separados por espaços.
+
+//function get_string(string, start, end) {
+   //str =  string.split(start);
+    //str = str[1].split(end);
+
+    //return str[0];
+
+//let texto = '<p>Texto padrão do nosso site</p>';
+//console.log(get_string(texto, '<p>', '</p>'));
+
+function conteudoPFooter() {     
+const paragrafosP = document.querySelectorAll('.center-content p');    
+ let conteudoParagrafosP = '';        
+  for(index = 0; index < paragrafosP.length; index +=1) {       
+    conteudoParagrafosP = `${conteudoParagrafosP} ${paragrafosP[index].innerText}`
+  }   
+     document.querySelector('footer p').innerText = conteudoParagrafosP;    
+     }  
+      conteudoPFooter();
+
+    </script>
+  </body>
+</html>
